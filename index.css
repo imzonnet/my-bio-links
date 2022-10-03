@@ -1,0 +1,118 @@
+/**
+* @author: #imzonnet
+* @date: 10/03/2022
+* @website: https://imzon.net
+* @version: 1.0
+**/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+body {
+  background: url(./images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+}
+
+header {
+  margin-top: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > img {
+  width: 6em;
+  height: 6em;
+  border-radius: 100%;
+  border: 2px dashed #ff5757;
+}
+
+header > h1 {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 1em;
+  background-color: #000a;
+  color: #fff;
+  padding: 0.3em 0.6em;
+  border: 1px solid #fffa;
+}
+
+header > h1 a {
+  color: #ffffff;
+}
+
+header > .subtitle {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 1em;
+  background-color: rgba(141, 141, 141, 0.667);
+  color: #fff;
+  padding: 0.5em 0.8em;
+  border: 1px solid #fffa;
+}
+
+ul {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 480px;
+}
+
+ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em;
+  background-color: #fffa;
+  border-radius: 10em;
+  margin: 1.4em 0;
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+  transition: 0.1s ease-in-out all;
+  color: black;
+  text-decoration: none;
+  transition: 0.1s ease-in-out all;
+}
+
+ul li:hover a {
+  color: #ffffff;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  background-color: rgba(197, 19, 80, 0.667);
+}
