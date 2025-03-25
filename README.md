@@ -14,7 +14,7 @@
 
 **Tech Stack:**
 - **Backend:** PHP (Laravel, WordPress), NodeJS (NestJS, ExpressJS), Python
-- **E-Commerece**: Shopify, WooCommerce (WordPress)
+- **E-commerce**: Shopify, WooCommerce (WordPress)
 - **Frontend:** ReactJS, VueJS, NextJS, Nuxt
 - **Database:** MySQL, PostgreSQL, MongoDB, Redis
 - **DevOps:** Docker, AWS, CI/CD (Jenkins, GitHub Actions) 
